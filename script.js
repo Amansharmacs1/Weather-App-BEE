@@ -34,11 +34,14 @@ function getData() {
 
 btn.addEventListener("click", getData);
 
-function createCard(arr) {
-    result.innerHTML="";
-    arr.forEach((item) => {
-        let h4 = document.createElement("h4");
-        h4.innerText = item;
-        result.appendChild(h4);
+function createCard(arr){
+    const result = document.getElementById("result");
+    result.innerHTML = "";
+    result.style.display = "block";
+
+    arr.forEach(item => {
+        const h2 = document.createElement("h2");
+        h2.innerText = item;
+        result.appendChild(h2);
     });
 }
