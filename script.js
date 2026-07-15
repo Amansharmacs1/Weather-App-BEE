@@ -10,7 +10,7 @@ function getData() {
         return;
     }
 
-    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city.value}&appid=07a85bdf7c3429598c1a2800af38467d&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city.value}&appid=YOUR_API_KEY_HERE&units=metric`)
         .then((res) => res.json())
         .then((res) => {
             data = res;
